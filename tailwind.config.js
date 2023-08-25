@@ -13,6 +13,11 @@ module.exports = {
         darkBlue: "hsl(249, 10%, 26%) ",
         grayishBlue: "hsl(246, 25%, 77%)",
       },
+
+      backgroundImage: {
+        mobile: "url('/images/bg-intro-mobile.png')",
+        desktop: "url('/images/bg-intro-desktop.png')",
+      },
     },
   },
   plugins: [],
