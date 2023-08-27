@@ -70,9 +70,20 @@ const errorEmail = function () {
     if (
       !emailAddressField.value.includes("@") &&
       !emailAddressField.value.includes(".")
-    )
+    ) {
       err = "Looks like this is not an email!";
-    else {
+      alert("false");
+    } else if (
+      emailAddressField.value.includes("@") &&
+      !emailAddressField.value.includes(".")
+    ) {
+      err = "Looks like this is not an email!";
+    } else if (
+      !emailAddressField.value.includes("@") &&
+      emailAddressField.value.includes(".")
+    ) {
+      err = "Looks like this is not an email!";
+    } else {
       // if @ and . is present in the input then i want no errorss
       emailError.classList.add("hidden");
       emailErrorBorder.classList.remove("border-red");
